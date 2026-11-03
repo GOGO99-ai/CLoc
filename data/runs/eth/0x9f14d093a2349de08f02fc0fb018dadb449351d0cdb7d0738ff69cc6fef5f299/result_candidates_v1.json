@@ -1,0 +1,1345 @@
+{
+  "schema_version": "result_candidates_v1",
+  "transaction_graph_sha256": "9ea25a454339c83cdf5eb5644d58f2f0422a8e8ad1718914daa5f22e6df8b7ee",
+  "runtime_annotations_sha256": "240fda2e6ae860cabfe157e0bfc811350b7d227163d9a7b308919729f5894b8e",
+  "observed_asset_ledger_sha256": "d67054e93d8723438bdac31edbe34aad61798b4c6f946777d5058b6d3972f654",
+  "asset_continuity_sha256": "d5ed7acd16ab9ee68bfc16961ac4c3fde698b6e0db745b9f0903d737e43ae72d",
+  "detection_config": {
+    "outflow_weights": {
+      "magnitude": "0.35",
+      "terminal_retention": "0.30",
+      "late_execution": "0.15",
+      "root_receiver": "0.10",
+      "source_activity": "0.10"
+    },
+    "profit_weights": {
+      "complete_financing": "0.30",
+      "after_last_repayment": "0.25",
+      "same_financing_asset": "0.20",
+      "terminal_retention": "0.20",
+      "root_receiver": "0.05"
+    },
+    "outflow_threshold": "0.5000",
+    "max_candidates_per_asset": 5,
+    "ensure_top1_per_asset": true
+  },
+  "result_type_coverage": {
+    "R_OUTFLOW": {
+      "status": "SUPPORTED",
+      "reason": "complete asset transfer facts are available"
+    },
+    "R_PROFIT": {
+      "status": "PARTIALLY_SUPPORTED",
+      "reason": "requires complete financing episodes"
+    },
+    "R_STATE": {
+      "status": "UNSUPPORTED",
+      "reason": "no storage diff or explicit state-change trace evidence"
+    },
+    "R_FAILURE": {
+      "status": "UNSUPPORTED",
+      "reason": "trace parser does not preserve revert or error evidence"
+    }
+  },
+  "result_candidates": [
+    {
+      "result_id": "result_r001",
+      "node_id": "n834",
+      "result_type": "R_OUTFLOW",
+      "confidence": "0.9777",
+      "evidence_level": "STRONG_ASSOCIATION",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xa2327a938Febf5FEC13baCFb16Ae10EcBc4cbDCF",
+        "normalized": "0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf"
+      },
+      "from_address": {
+        "original": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "normalized": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "4029106880396",
+      "source_fact_ids": [
+        "asset_f120"
+      ],
+      "signals": [
+        {
+          "signal_type": "MAGNITUDE_RANK",
+          "value": "1.0000",
+          "reason": "amount rank within the same asset only",
+          "trace_refs": [
+            "0/183/1/1/0/4/0/0/0"
+          ]
+        },
+        {
+          "signal_type": "TERMINAL_RETENTION",
+          "value": "1.0000",
+          "reason": "received amount is not fully consumed by later observed outflows",
+          "trace_refs": [
+            "0/183/1/1/0/4/0/0/0"
+          ]
+        },
+        {
+          "signal_type": "LATE_EXECUTION",
+          "value": "0.8510",
+          "reason": "relative execution position only",
+          "trace_refs": [
+            "0/183/1/1/0/4/0/0/0"
+          ]
+        },
+        {
+          "signal_type": "ROOT_RECEIVER",
+          "value": "1.0000",
+          "reason": "receiver equals the transaction graph root callee",
+          "trace_refs": [
+            "0/183/1/1/0/4/0/0/0"
+          ]
+        },
+        {
+          "signal_type": "SOURCE_ACTIVITY",
+          "value": "1.0000",
+          "reason": "source address appears as a transaction graph callee",
+          "trace_refs": [
+            "0/183/1/1/0/4/0/0/0"
+          ]
+        }
+      ],
+      "negative_evidence": [
+        "WITHIN_SWAP_SUBTREE",
+        "ASSET_HAS_UNMATCHED_OBSERVED_OUTFLOWS",
+        "DERIVED_ADDRESS_CONTEXT"
+      ],
+      "selection_reason": "SCORE_THRESHOLD",
+      "uncertainties": [
+        "observed asset ledger is partial",
+        "token decimals and real balance changes are unknown"
+      ]
+    },
+    {
+      "result_id": "result_r002",
+      "node_id": "n970",
+      "result_type": "R_OUTFLOW",
+      "confidence": "0.8985",
+      "evidence_level": "STRONG_ASSOCIATION",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xF57e7e7C23978C3cAEC3C3548E3D615c346e79fF",
+        "normalized": "0xf57e7e7c23978c3caec3c3548e3d615c346e79ff"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0x8f6A86f3aB015F4D03DDB13AbB02710e6d7aB31B",
+        "normalized": "0x8f6a86f3ab015f4d03ddb13abb02710e6d7ab31b"
+      },
+      "amount_raw": "274939044087758284822",
+      "source_fact_ids": [
+        "asset_f143"
+      ],
+      "signals": [
+        {
+          "signal_type": "MAGNITUDE_RANK",
+          "value": "1.0000",
+          "reason": "amount rank within the same asset only",
+          "trace_refs": [
+            "0/209/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "TERMINAL_RETENTION",
+          "value": "1.0000",
+          "reason": "received amount is not fully consumed by later observed outflows",
+          "trace_refs": [
+            "0/209/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "LATE_EXECUTION",
+          "value": "0.9898",
+          "reason": "relative execution position only",
+          "trace_refs": [
+            "0/209/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "ROOT_RECEIVER",
+          "value": "0.0000",
+          "reason": "receiver equals the transaction graph root callee",
+          "trace_refs": [
+            "0/209/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "SOURCE_ACTIVITY",
+          "value": "1.0000",
+          "reason": "source address appears as a transaction graph callee",
+          "trace_refs": [
+            "0/209/0/4/0/0"
+          ]
+        }
+      ],
+      "negative_evidence": [
+        "ASSET_HAS_UNMATCHED_OBSERVED_OUTFLOWS",
+        "DERIVED_ADDRESS_CONTEXT"
+      ],
+      "selection_reason": "SCORE_THRESHOLD",
+      "uncertainties": [
+        "observed asset ledger is partial",
+        "token decimals and real balance changes are unknown"
+      ]
+    },
+    {
+      "result_id": "result_r003",
+      "node_id": "n950",
+      "result_type": "R_OUTFLOW",
+      "confidence": "0.8954",
+      "evidence_level": "STRONG_ASSOCIATION",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3",
+        "normalized": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0x8f6A86f3aB015F4D03DDB13AbB02710e6d7aB31B",
+        "normalized": "0x8f6a86f3ab015f4d03ddb13abb02710e6d7ab31b"
+      },
+      "amount_raw": "4125858256772000000000",
+      "source_fact_ids": [
+        "asset_f140"
+      ],
+      "signals": [
+        {
+          "signal_type": "MAGNITUDE_RANK",
+          "value": "1.0000",
+          "reason": "amount rank within the same asset only",
+          "trace_refs": [
+            "0/205/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "TERMINAL_RETENTION",
+          "value": "1.0000",
+          "reason": "received amount is not fully consumed by later observed outflows",
+          "trace_refs": [
+            "0/205/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "LATE_EXECUTION",
+          "value": "0.9694",
+          "reason": "relative execution position only",
+          "trace_refs": [
+            "0/205/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "ROOT_RECEIVER",
+          "value": "0.0000",
+          "reason": "receiver equals the transaction graph root callee",
+          "trace_refs": [
+            "0/205/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "SOURCE_ACTIVITY",
+          "value": "1.0000",
+          "reason": "source address appears as a transaction graph callee",
+          "trace_refs": [
+            "0/205/0/4/0/0"
+          ]
+        }
+      ],
+      "negative_evidence": [
+        "ASSET_HAS_UNMATCHED_OBSERVED_OUTFLOWS",
+        "DERIVED_ADDRESS_CONTEXT"
+      ],
+      "selection_reason": "SCORE_THRESHOLD",
+      "uncertainties": [
+        "observed asset ledger is partial",
+        "token decimals and real balance changes are unknown"
+      ]
+    },
+    {
+      "result_id": "result_r004",
+      "node_id": "n930",
+      "result_type": "R_OUTFLOW",
+      "confidence": "0.8923",
+      "evidence_level": "STRONG_ASSOCIATION",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x92E187a03B6CD19CB6AF293ba17F2745Fd2357D5",
+        "normalized": "0x92e187a03b6cd19cb6af293ba17f2745fd2357d5"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0x8f6A86f3aB015F4D03DDB13AbB02710e6d7aB31B",
+        "normalized": "0x8f6a86f3ab015f4d03ddb13abb02710e6d7ab31b"
+      },
+      "amount_raw": "5155863718616852657152992",
+      "source_fact_ids": [
+        "asset_f137"
+      ],
+      "signals": [
+        {
+          "signal_type": "MAGNITUDE_RANK",
+          "value": "1.0000",
+          "reason": "amount rank within the same asset only",
+          "trace_refs": [
+            "0/201/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "TERMINAL_RETENTION",
+          "value": "1.0000",
+          "reason": "received amount is not fully consumed by later observed outflows",
+          "trace_refs": [
+            "0/201/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "LATE_EXECUTION",
+          "value": "0.9490",
+          "reason": "relative execution position only",
+          "trace_refs": [
+            "0/201/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "ROOT_RECEIVER",
+          "value": "0.0000",
+          "reason": "receiver equals the transaction graph root callee",
+          "trace_refs": [
+            "0/201/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "SOURCE_ACTIVITY",
+          "value": "1.0000",
+          "reason": "source address appears as a transaction graph callee",
+          "trace_refs": [
+            "0/201/0/4/0/0"
+          ]
+        }
+      ],
+      "negative_evidence": [
+        "ASSET_HAS_UNMATCHED_OBSERVED_OUTFLOWS",
+        "DERIVED_ADDRESS_CONTEXT"
+      ],
+      "selection_reason": "SCORE_THRESHOLD",
+      "uncertainties": [
+        "observed asset ledger is partial",
+        "token decimals and real balance changes are unknown"
+      ]
+    },
+    {
+      "result_id": "result_r005",
+      "node_id": "n910",
+      "result_type": "R_OUTFLOW",
+      "confidence": "0.8893",
+      "evidence_level": "STRONG_ASSOCIATION",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+        "normalized": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0x8f6A86f3aB015F4D03DDB13AbB02710e6d7aB31B",
+        "normalized": "0x8f6a86f3ab015f4d03ddb13abb02710e6d7ab31b"
+      },
+      "amount_raw": "2142797145",
+      "source_fact_ids": [
+        "asset_f134"
+      ],
+      "signals": [
+        {
+          "signal_type": "MAGNITUDE_RANK",
+          "value": "1.0000",
+          "reason": "amount rank within the same asset only",
+          "trace_refs": [
+            "0/197/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "TERMINAL_RETENTION",
+          "value": "1.0000",
+          "reason": "received amount is not fully consumed by later observed outflows",
+          "trace_refs": [
+            "0/197/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "LATE_EXECUTION",
+          "value": "0.9286",
+          "reason": "relative execution position only",
+          "trace_refs": [
+            "0/197/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "ROOT_RECEIVER",
+          "value": "0.0000",
+          "reason": "receiver equals the transaction graph root callee",
+          "trace_refs": [
+            "0/197/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "SOURCE_ACTIVITY",
+          "value": "1.0000",
+          "reason": "source address appears as a transaction graph callee",
+          "trace_refs": [
+            "0/197/0/4/0/0"
+          ]
+        }
+      ],
+      "negative_evidence": [
+        "ASSET_HAS_UNMATCHED_OBSERVED_OUTFLOWS",
+        "DERIVED_ADDRESS_CONTEXT"
+      ],
+      "selection_reason": "SCORE_THRESHOLD",
+      "uncertainties": [
+        "observed asset ledger is partial",
+        "token decimals and real balance changes are unknown"
+      ]
+    },
+    {
+      "result_id": "result_r006",
+      "node_id": "n898",
+      "result_type": "R_OUTFLOW",
+      "confidence": "0.8874",
+      "evidence_level": "STRONG_ASSOCIATION",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "normalized": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x8f6A86f3aB015F4D03DDB13AbB02710e6d7aB31B",
+        "normalized": "0x8f6a86f3ab015f4d03ddb13abb02710e6d7ab31b"
+      },
+      "amount_raw": "1796239277284333418370",
+      "source_fact_ids": [
+        "asset_f132"
+      ],
+      "signals": [
+        {
+          "signal_type": "MAGNITUDE_RANK",
+          "value": "1.0000",
+          "reason": "amount rank within the same asset only",
+          "trace_refs": [
+            "0/194"
+          ]
+        },
+        {
+          "signal_type": "TERMINAL_RETENTION",
+          "value": "1.0000",
+          "reason": "received amount is not fully consumed by later observed outflows",
+          "trace_refs": [
+            "0/194"
+          ]
+        },
+        {
+          "signal_type": "LATE_EXECUTION",
+          "value": "0.9163",
+          "reason": "relative execution position only",
+          "trace_refs": [
+            "0/194"
+          ]
+        },
+        {
+          "signal_type": "ROOT_RECEIVER",
+          "value": "0.0000",
+          "reason": "receiver equals the transaction graph root callee",
+          "trace_refs": [
+            "0/194"
+          ]
+        },
+        {
+          "signal_type": "SOURCE_ACTIVITY",
+          "value": "1.0000",
+          "reason": "source address appears as a transaction graph callee",
+          "trace_refs": [
+            "0/194"
+          ]
+        }
+      ],
+      "negative_evidence": [
+        "ASSET_HAS_UNMATCHED_OBSERVED_OUTFLOWS",
+        "INCOMPLETE_FINANCING_EPISODE_PRESENT",
+        "DERIVED_ADDRESS_CONTEXT"
+      ],
+      "selection_reason": "SCORE_THRESHOLD",
+      "uncertainties": [
+        "observed asset ledger is partial",
+        "token decimals and real balance changes are unknown"
+      ]
+    },
+    {
+      "result_id": "result_r007",
+      "node_id": "n873",
+      "result_type": "R_OUTFLOW",
+      "confidence": "0.8836",
+      "evidence_level": "STRONG_ASSOCIATION",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+        "normalized": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x0d4a11d5EEaaC28EC3F61d100daF4d40471f1852",
+        "normalized": "0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852"
+      },
+      "amount_raw": "4525120098829",
+      "source_fact_ids": [
+        "asset_f128"
+      ],
+      "signals": [
+        {
+          "signal_type": "MAGNITUDE_RANK",
+          "value": "1.0000",
+          "reason": "amount rank within the same asset only",
+          "trace_refs": [
+            "0/187/1/2"
+          ]
+        },
+        {
+          "signal_type": "TERMINAL_RETENTION",
+          "value": "1.0000",
+          "reason": "received amount is not fully consumed by later observed outflows",
+          "trace_refs": [
+            "0/187/1/2"
+          ]
+        },
+        {
+          "signal_type": "LATE_EXECUTION",
+          "value": "0.8908",
+          "reason": "relative execution position only",
+          "trace_refs": [
+            "0/187/1/2"
+          ]
+        },
+        {
+          "signal_type": "ROOT_RECEIVER",
+          "value": "0.0000",
+          "reason": "receiver equals the transaction graph root callee",
+          "trace_refs": [
+            "0/187/1/2"
+          ]
+        },
+        {
+          "signal_type": "SOURCE_ACTIVITY",
+          "value": "1.0000",
+          "reason": "source address appears as a transaction graph callee",
+          "trace_refs": [
+            "0/187/1/2"
+          ]
+        }
+      ],
+      "negative_evidence": [
+        "WITHIN_SWAP_SUBTREE",
+        "ASSET_HAS_UNMATCHED_OBSERVED_OUTFLOWS",
+        "DERIVED_ADDRESS_CONTEXT"
+      ],
+      "selection_reason": "SCORE_THRESHOLD",
+      "uncertainties": [
+        "observed asset ledger is partial",
+        "token decimals and real balance changes are unknown"
+      ]
+    },
+    {
+      "result_id": "result_r008",
+      "node_id": "n844",
+      "result_type": "R_OUTFLOW",
+      "confidence": "0.8792",
+      "evidence_level": "STRONG_ASSOCIATION",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xa2327a938Febf5FEC13baCFb16Ae10EcBc4cbDCF",
+        "normalized": "0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf"
+      },
+      "from_address": {
+        "original": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "normalized": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      },
+      "to_address": {
+        "original": "0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc",
+        "normalized": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc"
+      },
+      "amount_raw": "4029106880396",
+      "source_fact_ids": [
+        "asset_f123"
+      ],
+      "signals": [
+        {
+          "signal_type": "MAGNITUDE_RANK",
+          "value": "1.0000",
+          "reason": "amount rank within the same asset only",
+          "trace_refs": [
+            "0/183/1/2/0"
+          ]
+        },
+        {
+          "signal_type": "TERMINAL_RETENTION",
+          "value": "1.0000",
+          "reason": "received amount is not fully consumed by later observed outflows",
+          "trace_refs": [
+            "0/183/1/2/0"
+          ]
+        },
+        {
+          "signal_type": "LATE_EXECUTION",
+          "value": "0.8612",
+          "reason": "relative execution position only",
+          "trace_refs": [
+            "0/183/1/2/0"
+          ]
+        },
+        {
+          "signal_type": "ROOT_RECEIVER",
+          "value": "0.0000",
+          "reason": "receiver equals the transaction graph root callee",
+          "trace_refs": [
+            "0/183/1/2/0"
+          ]
+        },
+        {
+          "signal_type": "SOURCE_ACTIVITY",
+          "value": "1.0000",
+          "reason": "source address appears as a transaction graph callee",
+          "trace_refs": [
+            "0/183/1/2/0"
+          ]
+        }
+      ],
+      "negative_evidence": [
+        "WITHIN_SWAP_SUBTREE",
+        "ASSET_HAS_UNMATCHED_OBSERVED_OUTFLOWS",
+        "DERIVED_ADDRESS_CONTEXT"
+      ],
+      "selection_reason": "SCORE_THRESHOLD",
+      "uncertainties": [
+        "observed asset ledger is partial",
+        "token decimals and real balance changes are unknown"
+      ]
+    },
+    {
+      "result_id": "result_r009",
+      "node_id": "n843",
+      "result_type": "R_OUTFLOW",
+      "confidence": "0.8790",
+      "evidence_level": "STRONG_ASSOCIATION",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "normalized": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc",
+        "normalized": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc"
+      },
+      "amount_raw": "4029106880396",
+      "source_fact_ids": [
+        "asset_f122"
+      ],
+      "signals": [
+        {
+          "signal_type": "MAGNITUDE_RANK",
+          "value": "1.0000",
+          "reason": "amount rank within the same asset only",
+          "trace_refs": [
+            "0/183/1/2"
+          ]
+        },
+        {
+          "signal_type": "TERMINAL_RETENTION",
+          "value": "1.0000",
+          "reason": "received amount is not fully consumed by later observed outflows",
+          "trace_refs": [
+            "0/183/1/2"
+          ]
+        },
+        {
+          "signal_type": "LATE_EXECUTION",
+          "value": "0.8602",
+          "reason": "relative execution position only",
+          "trace_refs": [
+            "0/183/1/2"
+          ]
+        },
+        {
+          "signal_type": "ROOT_RECEIVER",
+          "value": "0.0000",
+          "reason": "receiver equals the transaction graph root callee",
+          "trace_refs": [
+            "0/183/1/2"
+          ]
+        },
+        {
+          "signal_type": "SOURCE_ACTIVITY",
+          "value": "1.0000",
+          "reason": "source address appears as a transaction graph callee",
+          "trace_refs": [
+            "0/183/1/2"
+          ]
+        }
+      ],
+      "negative_evidence": [
+        "WITHIN_SWAP_SUBTREE",
+        "ASSET_HAS_UNMATCHED_OBSERVED_OUTFLOWS",
+        "DERIVED_ADDRESS_CONTEXT"
+      ],
+      "selection_reason": "SCORE_THRESHOLD",
+      "uncertainties": [
+        "observed asset ledger is partial",
+        "token decimals and real balance changes are unknown"
+      ]
+    },
+    {
+      "result_id": "result_r010",
+      "node_id": "n081",
+      "result_type": "R_OUTFLOW",
+      "confidence": "0.7624",
+      "evidence_level": "STRONG_ASSOCIATION",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xab5167e8cC36A3a91Fd2d75C6147140cd1837355",
+        "normalized": "0xab5167e8cc36a3a91fd2d75c6147140cd1837355"
+      },
+      "amount_raw": "99940741365832694596828",
+      "source_fact_ids": [
+        "asset_f005"
+      ],
+      "signals": [
+        {
+          "signal_type": "MAGNITUDE_RANK",
+          "value": "1.0000",
+          "reason": "amount rank within the same asset only",
+          "trace_refs": [
+            "0/11/0/7/0/0"
+          ]
+        },
+        {
+          "signal_type": "TERMINAL_RETENTION",
+          "value": "1.0000",
+          "reason": "received amount is not fully consumed by later observed outflows",
+          "trace_refs": [
+            "0/11/0/7/0/0"
+          ]
+        },
+        {
+          "signal_type": "LATE_EXECUTION",
+          "value": "0.0827",
+          "reason": "relative execution position only",
+          "trace_refs": [
+            "0/11/0/7/0/0"
+          ]
+        },
+        {
+          "signal_type": "ROOT_RECEIVER",
+          "value": "0.0000",
+          "reason": "receiver equals the transaction graph root callee",
+          "trace_refs": [
+            "0/11/0/7/0/0"
+          ]
+        },
+        {
+          "signal_type": "SOURCE_ACTIVITY",
+          "value": "1.0000",
+          "reason": "source address appears as a transaction graph callee",
+          "trace_refs": [
+            "0/11/0/7/0/0"
+          ]
+        }
+      ],
+      "negative_evidence": [
+        "ASSET_HAS_UNMATCHED_OBSERVED_OUTFLOWS",
+        "DERIVED_ADDRESS_CONTEXT"
+      ],
+      "selection_reason": "SCORE_THRESHOLD",
+      "uncertainties": [
+        "observed asset ledger is partial",
+        "token decimals and real balance changes are unknown"
+      ]
+    },
+    {
+      "result_id": "result_r011",
+      "node_id": "n865",
+      "result_type": "R_OUTFLOW",
+      "confidence": "0.6824",
+      "evidence_level": "STRONG_ASSOCIATION",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+        "normalized": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "4525120098829",
+      "source_fact_ids": [
+        "asset_f126"
+      ],
+      "signals": [
+        {
+          "signal_type": "MAGNITUDE_RANK",
+          "value": "1.0000",
+          "reason": "amount rank within the same asset only",
+          "trace_refs": [
+            "0/187/1/1/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "TERMINAL_RETENTION",
+          "value": "0.0000",
+          "reason": "received amount is not fully consumed by later observed outflows",
+          "trace_refs": [
+            "0/187/1/1/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "LATE_EXECUTION",
+          "value": "0.8827",
+          "reason": "relative execution position only",
+          "trace_refs": [
+            "0/187/1/1/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "ROOT_RECEIVER",
+          "value": "1.0000",
+          "reason": "receiver equals the transaction graph root callee",
+          "trace_refs": [
+            "0/187/1/1/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "SOURCE_ACTIVITY",
+          "value": "1.0000",
+          "reason": "source address appears as a transaction graph callee",
+          "trace_refs": [
+            "0/187/1/1/0/4/0/0"
+          ]
+        }
+      ],
+      "negative_evidence": [
+        "MOSTLY_CONSUMED_BY_LATER_OBSERVED_OUTFLOWS",
+        "WITHIN_SWAP_SUBTREE",
+        "RECEIVER_LATER_SAME_ASSET_TRANSFER",
+        "ASSET_HAS_UNMATCHED_OBSERVED_OUTFLOWS",
+        "DERIVED_ADDRESS_CONTEXT"
+      ],
+      "selection_reason": "SCORE_THRESHOLD",
+      "uncertainties": [
+        "observed asset ledger is partial",
+        "token decimals and real balance changes are unknown"
+      ]
+    },
+    {
+      "result_id": "result_r012",
+      "node_id": "n833",
+      "result_type": "R_OUTFLOW",
+      "confidence": "0.6775",
+      "evidence_level": "STRONG_ASSOCIATION",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "normalized": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "4029106880396",
+      "source_fact_ids": [
+        "asset_f119"
+      ],
+      "signals": [
+        {
+          "signal_type": "MAGNITUDE_RANK",
+          "value": "1.0000",
+          "reason": "amount rank within the same asset only",
+          "trace_refs": [
+            "0/183/1/1/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "TERMINAL_RETENTION",
+          "value": "0.0000",
+          "reason": "received amount is not fully consumed by later observed outflows",
+          "trace_refs": [
+            "0/183/1/1/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "LATE_EXECUTION",
+          "value": "0.8500",
+          "reason": "relative execution position only",
+          "trace_refs": [
+            "0/183/1/1/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "ROOT_RECEIVER",
+          "value": "1.0000",
+          "reason": "receiver equals the transaction graph root callee",
+          "trace_refs": [
+            "0/183/1/1/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "SOURCE_ACTIVITY",
+          "value": "1.0000",
+          "reason": "source address appears as a transaction graph callee",
+          "trace_refs": [
+            "0/183/1/1/0/4/0/0"
+          ]
+        }
+      ],
+      "negative_evidence": [
+        "MOSTLY_CONSUMED_BY_LATER_OBSERVED_OUTFLOWS",
+        "WITHIN_SWAP_SUBTREE",
+        "RECEIVER_LATER_SAME_ASSET_TRANSFER",
+        "ASSET_HAS_UNMATCHED_OBSERVED_OUTFLOWS",
+        "DERIVED_ADDRESS_CONTEXT"
+      ],
+      "selection_reason": "SCORE_THRESHOLD",
+      "uncertainties": [
+        "observed asset ledger is partial",
+        "token decimals and real balance changes are unknown"
+      ]
+    },
+    {
+      "result_id": "result_r013",
+      "node_id": "n813",
+      "result_type": "R_OUTFLOW",
+      "confidence": "0.6245",
+      "evidence_level": "STRONG_ASSOCIATION",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "7123215857451736781",
+      "source_fact_ids": [
+        "asset_f116"
+      ],
+      "signals": [
+        {
+          "signal_type": "MAGNITUDE_RANK",
+          "value": "0.0001",
+          "reason": "amount rank within the same asset only",
+          "trace_refs": [
+            "0/178/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "TERMINAL_RETENTION",
+          "value": "1.0000",
+          "reason": "received amount is not fully consumed by later observed outflows",
+          "trace_refs": [
+            "0/178/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "LATE_EXECUTION",
+          "value": "0.8296",
+          "reason": "relative execution position only",
+          "trace_refs": [
+            "0/178/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "ROOT_RECEIVER",
+          "value": "1.0000",
+          "reason": "receiver equals the transaction graph root callee",
+          "trace_refs": [
+            "0/178/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "SOURCE_ACTIVITY",
+          "value": "1.0000",
+          "reason": "source address appears as a transaction graph callee",
+          "trace_refs": [
+            "0/178/0/4/0/0"
+          ]
+        }
+      ],
+      "negative_evidence": [
+        "RECEIVER_LATER_SAME_ASSET_TRANSFER",
+        "ASSET_HAS_UNMATCHED_OBSERVED_OUTFLOWS",
+        "DERIVED_ADDRESS_CONTEXT"
+      ],
+      "selection_reason": "SCORE_THRESHOLD",
+      "uncertainties": [
+        "observed asset ledger is partial",
+        "token decimals and real balance changes are unknown"
+      ]
+    },
+    {
+      "result_id": "result_r014",
+      "node_id": "n888",
+      "result_type": "R_OUTFLOW",
+      "confidence": "0.6242",
+      "evidence_level": "STRONG_ASSOCIATION",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "normalized": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0x8f6A86f3aB015F4D03DDB13AbB02710e6d7aB31B",
+        "normalized": "0x8f6a86f3ab015f4d03ddb13abb02710e6d7ab31b"
+      },
+      "amount_raw": "452912053033493786925",
+      "source_fact_ids": [
+        "asset_f130"
+      ],
+      "signals": [
+        {
+          "signal_type": "MAGNITUDE_RANK",
+          "value": "0.2521",
+          "reason": "amount rank within the same asset only",
+          "trace_refs": [
+            "0/191/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "TERMINAL_RETENTION",
+          "value": "1.0000",
+          "reason": "received amount is not fully consumed by later observed outflows",
+          "trace_refs": [
+            "0/191/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "LATE_EXECUTION",
+          "value": "0.9061",
+          "reason": "relative execution position only",
+          "trace_refs": [
+            "0/191/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "ROOT_RECEIVER",
+          "value": "0.0000",
+          "reason": "receiver equals the transaction graph root callee",
+          "trace_refs": [
+            "0/191/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "SOURCE_ACTIVITY",
+          "value": "1.0000",
+          "reason": "source address appears as a transaction graph callee",
+          "trace_refs": [
+            "0/191/0/4/0/0"
+          ]
+        }
+      ],
+      "negative_evidence": [
+        "ASSET_HAS_UNMATCHED_OBSERVED_OUTFLOWS",
+        "INCOMPLETE_FINANCING_EPISODE_PRESENT",
+        "DERIVED_ADDRESS_CONTEXT"
+      ],
+      "selection_reason": "SCORE_THRESHOLD",
+      "uncertainties": [
+        "observed asset ledger is partial",
+        "token decimals and real balance changes are unknown"
+      ]
+    },
+    {
+      "result_id": "result_r015",
+      "node_id": "n800",
+      "result_type": "R_OUTFLOW",
+      "confidence": "0.6225",
+      "evidence_level": "STRONG_ASSOCIATION",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "4465565113260432016",
+      "source_fact_ids": [
+        "asset_f114"
+      ],
+      "signals": [
+        {
+          "signal_type": "MAGNITUDE_RANK",
+          "value": "0.0000",
+          "reason": "amount rank within the same asset only",
+          "trace_refs": [
+            "0/175/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "TERMINAL_RETENTION",
+          "value": "1.0000",
+          "reason": "received amount is not fully consumed by later observed outflows",
+          "trace_refs": [
+            "0/175/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "LATE_EXECUTION",
+          "value": "0.8163",
+          "reason": "relative execution position only",
+          "trace_refs": [
+            "0/175/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "ROOT_RECEIVER",
+          "value": "1.0000",
+          "reason": "receiver equals the transaction graph root callee",
+          "trace_refs": [
+            "0/175/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "SOURCE_ACTIVITY",
+          "value": "1.0000",
+          "reason": "source address appears as a transaction graph callee",
+          "trace_refs": [
+            "0/175/0/4/0/0"
+          ]
+        }
+      ],
+      "negative_evidence": [
+        "RECEIVER_LATER_SAME_ASSET_TRANSFER",
+        "ASSET_HAS_UNMATCHED_OBSERVED_OUTFLOWS",
+        "DERIVED_ADDRESS_CONTEXT"
+      ],
+      "selection_reason": "SCORE_THRESHOLD",
+      "uncertainties": [
+        "observed asset ledger is partial",
+        "token decimals and real balance changes are unknown"
+      ]
+    },
+    {
+      "result_id": "result_r016",
+      "node_id": "n787",
+      "result_type": "R_OUTFLOW",
+      "confidence": "0.6205",
+      "evidence_level": "STRONG_ASSOCIATION",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "2799475992280606912",
+      "source_fact_ids": [
+        "asset_f112"
+      ],
+      "signals": [
+        {
+          "signal_type": "MAGNITUDE_RANK",
+          "value": "0.0000",
+          "reason": "amount rank within the same asset only",
+          "trace_refs": [
+            "0/172/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "TERMINAL_RETENTION",
+          "value": "1.0000",
+          "reason": "received amount is not fully consumed by later observed outflows",
+          "trace_refs": [
+            "0/172/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "LATE_EXECUTION",
+          "value": "0.8031",
+          "reason": "relative execution position only",
+          "trace_refs": [
+            "0/172/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "ROOT_RECEIVER",
+          "value": "1.0000",
+          "reason": "receiver equals the transaction graph root callee",
+          "trace_refs": [
+            "0/172/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "SOURCE_ACTIVITY",
+          "value": "1.0000",
+          "reason": "source address appears as a transaction graph callee",
+          "trace_refs": [
+            "0/172/0/4/0/0"
+          ]
+        }
+      ],
+      "negative_evidence": [
+        "RECEIVER_LATER_SAME_ASSET_TRANSFER",
+        "ASSET_HAS_UNMATCHED_OBSERVED_OUTFLOWS",
+        "DERIVED_ADDRESS_CONTEXT"
+      ],
+      "selection_reason": "SCORE_THRESHOLD",
+      "uncertainties": [
+        "observed asset ledger is partial",
+        "token decimals and real balance changes are unknown"
+      ]
+    },
+    {
+      "result_id": "result_r017",
+      "node_id": "n774",
+      "result_type": "R_OUTFLOW",
+      "confidence": "0.6185",
+      "evidence_level": "STRONG_ASSOCIATION",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "1754999788959169646",
+      "source_fact_ids": [
+        "asset_f110"
+      ],
+      "signals": [
+        {
+          "signal_type": "MAGNITUDE_RANK",
+          "value": "0.0000",
+          "reason": "amount rank within the same asset only",
+          "trace_refs": [
+            "0/169/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "TERMINAL_RETENTION",
+          "value": "1.0000",
+          "reason": "received amount is not fully consumed by later observed outflows",
+          "trace_refs": [
+            "0/169/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "LATE_EXECUTION",
+          "value": "0.7898",
+          "reason": "relative execution position only",
+          "trace_refs": [
+            "0/169/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "ROOT_RECEIVER",
+          "value": "1.0000",
+          "reason": "receiver equals the transaction graph root callee",
+          "trace_refs": [
+            "0/169/0/4/0/0"
+          ]
+        },
+        {
+          "signal_type": "SOURCE_ACTIVITY",
+          "value": "1.0000",
+          "reason": "source address appears as a transaction graph callee",
+          "trace_refs": [
+            "0/169/0/4/0/0"
+          ]
+        }
+      ],
+      "negative_evidence": [
+        "RECEIVER_LATER_SAME_ASSET_TRANSFER",
+        "ASSET_HAS_UNMATCHED_OBSERVED_OUTFLOWS",
+        "DERIVED_ADDRESS_CONTEXT"
+      ],
+      "selection_reason": "SCORE_THRESHOLD",
+      "uncertainties": [
+        "observed asset ledger is partial",
+        "token decimals and real balance changes are unknown"
+      ]
+    }
+  ],
+  "metadata": {
+    "r_outflow_count": 17,
+    "r_profit_count": 0,
+    "r_state_count": 0,
+    "r_failure_count": 0,
+    "top1_fallback_count": 0,
+    "assets_with_candidates": 9
+  }
+}

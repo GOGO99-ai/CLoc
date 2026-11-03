@@ -1,0 +1,45 @@
+{
+  "type": "call",
+  "gas": 1000,
+  "address": "0xroot",
+  "function": "0xdeadbeef",
+  "params": "0x01",
+  "decoded_params": null,
+  "call_type": "CALL",
+  "value": "0",
+  "children": [
+    {
+      "type": "call",
+      "gas": 900,
+      "address": "0xchild-a",
+      "function": "swap",
+      "params": "amount=10",
+      "decoded_params": {"amount": 10},
+      "call_type": "CALL",
+      "value": null,
+      "children": []
+    },
+    {
+      "type": "call",
+      "gas": 800,
+      "address": "0xchild-b",
+      "function": "swap",
+      "params": "amount=20",
+      "decoded_params": null,
+      "call_type": "STATICCALL",
+      "value": "7",
+      "children": [
+        {
+          "type": "call",
+          "gas": 700,
+          "address": "0xgrandchild",
+          "function": "cafebabe{value: 7}",
+          "params": "",
+          "call_type": null,
+          "value": null,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5406 @@
+{
+  "schema_version": "observed_asset_ledger_v1",
+  "transaction_graph_sha256": "9ea25a454339c83cdf5eb5644d58f2f0422a8e8ad1718914daa5f22e6df8b7ee",
+  "runtime_annotations_sha256": "240fda2e6ae860cabfe157e0bfc811350b7d227163d9a7b308919729f5894b8e",
+  "transfer_facts": [
+    {
+      "fact_id": "asset_f001",
+      "node_id": "n007",
+      "trace_index": 7,
+      "trace_path": "0/2/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "normalized": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "100000000000000000",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/2/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f002",
+      "node_id": "n012",
+      "trace_index": 12,
+      "trace_path": "0/2/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "79986094311542621010",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/2/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f003",
+      "node_id": "n037",
+      "trace_index": 37,
+      "trace_path": "0/7/0/7/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0x7B9aa6ED8B514C86bA819B99897b69b608293fFC",
+        "normalized": "0x7b9aa6ed8b514c86ba819b99897b69b608293ffc"
+      },
+      "amount_raw": "1670757229764922279713",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/7/0/7/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f004",
+      "node_id": "n059",
+      "trace_index": 59,
+      "trace_path": "0/9/0/7/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0x81D98c8fdA0410ee3e9D7586cB949cD19FA4cf38",
+        "normalized": "0x81d98c8fda0410ee3e9d7586cb949cd19fa4cf38"
+      },
+      "amount_raw": "152974521385715493913",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/9/0/7/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f005",
+      "node_id": "n081",
+      "trace_index": 81,
+      "trace_path": "0/11/0/7/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xab5167e8cC36A3a91Fd2d75C6147140cd1837355",
+        "normalized": "0xab5167e8cc36a3a91fd2d75c6147140cd1837355"
+      },
+      "amount_raw": "99940741365832694596828",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/11/0/7/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f006",
+      "node_id": "n090",
+      "trace_index": 90,
+      "trace_path": "0/13/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "196875656",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/13/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f007",
+      "node_id": "n106",
+      "trace_index": 106,
+      "trace_path": "0/16/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "196875655",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/16/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f008",
+      "node_id": "n111",
+      "trace_index": 111,
+      "trace_path": "0/16/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "79706446",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/16/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f009",
+      "node_id": "n119",
+      "trace_index": 119,
+      "trace_path": "0/19/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "314044864",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/19/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f010",
+      "node_id": "n124",
+      "trace_index": 124,
+      "trace_path": "0/19/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "127143196",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/19/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f011",
+      "node_id": "n132",
+      "trace_index": 132,
+      "trace_path": "0/22/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "500946532",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/22/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f012",
+      "node_id": "n137",
+      "trace_index": 137,
+      "trace_path": "0/22/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "202811606",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/22/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f013",
+      "node_id": "n145",
+      "trace_index": 145,
+      "trace_path": "0/25/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "799081458",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/25/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f014",
+      "node_id": "n150",
+      "trace_index": 150,
+      "trace_path": "0/25/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "323513556",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/25/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f015",
+      "node_id": "n158",
+      "trace_index": 158,
+      "trace_path": "0/28/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "1274649360",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/28/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f016",
+      "node_id": "n163",
+      "trace_index": 163,
+      "trace_path": "0/28/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "516050451",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/28/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f017",
+      "node_id": "n171",
+      "trace_index": 171,
+      "trace_path": "0/31/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "2033248269",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/31/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f018",
+      "node_id": "n176",
+      "trace_index": 176,
+      "trace_path": "0/31/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "823174373",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/31/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f019",
+      "node_id": "n184",
+      "trace_index": 184,
+      "trace_path": "0/34/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "3243322165",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/34/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f020",
+      "node_id": "n189",
+      "trace_index": 189,
+      "trace_path": "0/34/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "1313081009",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/34/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f021",
+      "node_id": "n197",
+      "trace_index": 197,
+      "trace_path": "0/37/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "5173563321",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/37/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f022",
+      "node_id": "n202",
+      "trace_index": 202,
+      "trace_path": "0/37/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "2094552253",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/37/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f023",
+      "node_id": "n210",
+      "trace_index": 210,
+      "trace_path": "0/40/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "8252574389",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/40/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f024",
+      "node_id": "n215",
+      "trace_index": 215,
+      "trace_path": "0/40/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "3341110798",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/40/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f025",
+      "node_id": "n223",
+      "trace_index": 223,
+      "trace_path": "0/43/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "13164037980",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/43/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f026",
+      "node_id": "n228",
+      "trace_index": 228,
+      "trace_path": "0/43/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "5329550195",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/43/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f027",
+      "node_id": "n236",
+      "trace_index": 236,
+      "trace_path": "0/46/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "20998525765",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/46/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f028",
+      "node_id": "n241",
+      "trace_index": 241,
+      "trace_path": "0/46/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "8501395791",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/46/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f029",
+      "node_id": "n249",
+      "trace_index": 249,
+      "trace_path": "0/49/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "33495655739",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/49/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f030",
+      "node_id": "n254",
+      "trace_index": 254,
+      "trace_path": "0/49/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "13560943750",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/49/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f031",
+      "node_id": "n262",
+      "trace_index": 262,
+      "trace_path": "0/52/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "53430367728",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/52/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f032",
+      "node_id": "n267",
+      "trace_index": 267,
+      "trace_path": "0/52/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "21631647308",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/52/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f033",
+      "node_id": "n275",
+      "trace_index": 275,
+      "trace_path": "0/55/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "85229088148",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/55/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f034",
+      "node_id": "n280",
+      "trace_index": 280,
+      "trace_path": "0/55/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "34505575267",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/55/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f035",
+      "node_id": "n288",
+      "trace_index": 288,
+      "trace_path": "0/58/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "135952601029",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/58/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f036",
+      "node_id": "n293",
+      "trace_index": 293,
+      "trace_path": "0/58/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "55041334003",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/58/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f037",
+      "node_id": "n301",
+      "trace_index": 301,
+      "trace_path": "0/61/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "216863868055",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/61/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f038",
+      "node_id": "n306",
+      "trace_index": 306,
+      "trace_path": "0/61/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "87798810060",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/61/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f039",
+      "node_id": "n314",
+      "trace_index": 314,
+      "trace_path": "0/64/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "345928926050",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/64/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f040",
+      "node_id": "n319",
+      "trace_index": 319,
+      "trace_path": "0/64/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "140051675481",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/64/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f041",
+      "node_id": "n327",
+      "trace_index": 327,
+      "trace_path": "0/67/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "551806176619",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/67/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f042",
+      "node_id": "n332",
+      "trace_index": 332,
+      "trace_path": "0/67/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "223402478824",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/67/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f043",
+      "node_id": "n340",
+      "trace_index": 340,
+      "trace_path": "0/70/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "880209874414",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/70/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f044",
+      "node_id": "n345",
+      "trace_index": 345,
+      "trace_path": "0/70/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "356358946603",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/70/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f045",
+      "node_id": "n353",
+      "trace_index": 353,
+      "trace_path": "0/73/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "1404060802225",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/73/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f046",
+      "node_id": "n358",
+      "trace_index": 358,
+      "trace_path": "0/73/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "568443553057",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/73/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f047",
+      "node_id": "n366",
+      "trace_index": 366,
+      "trace_path": "0/76/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "2239678051393",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/76/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f048",
+      "node_id": "n371",
+      "trace_index": 371,
+      "trace_path": "0/76/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "906748872428",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/76/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f049",
+      "node_id": "n379",
+      "trace_index": 379,
+      "trace_path": "0/79/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "3572607230358",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/79/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f050",
+      "node_id": "n384",
+      "trace_index": 384,
+      "trace_path": "0/79/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "1446394304637",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/79/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f051",
+      "node_id": "n392",
+      "trace_index": 392,
+      "trace_path": "0/82/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "5698820156079",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/82/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f052",
+      "node_id": "n397",
+      "trace_index": 397,
+      "trace_path": "0/82/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "2307206050209",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/82/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f053",
+      "node_id": "n405",
+      "trace_index": 405,
+      "trace_path": "0/85/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "9090434261949",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/85/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f054",
+      "node_id": "n410",
+      "trace_index": 410,
+      "trace_path": "0/85/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "3680324058976",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/85/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f055",
+      "node_id": "n418",
+      "trace_index": 418,
+      "trace_path": "0/88/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "14500544464922",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/88/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f056",
+      "node_id": "n423",
+      "trace_index": 423,
+      "trace_path": "0/88/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "5870643923568",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/88/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f057",
+      "node_id": "n431",
+      "trace_index": 431,
+      "trace_path": "0/91/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "23130445006276",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/91/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f058",
+      "node_id": "n436",
+      "trace_index": 436,
+      "trace_path": "0/91/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "9364517777522",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/91/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f059",
+      "node_id": "n444",
+      "trace_index": 444,
+      "trace_path": "0/94/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "36896372235030",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/94/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f060",
+      "node_id": "n449",
+      "trace_index": 449,
+      "trace_path": "0/94/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "14937746923038",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/94/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f061",
+      "node_id": "n457",
+      "trace_index": 457,
+      "trace_path": "0/97/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "58854997547022",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/97/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f062",
+      "node_id": "n462",
+      "trace_index": 462,
+      "trace_path": "0/97/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "23827845537583",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/97/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f063",
+      "node_id": "n470",
+      "trace_index": 470,
+      "trace_path": "0/100/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "93882149556461",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/100/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f064",
+      "node_id": "n475",
+      "trace_index": 475,
+      "trace_path": "0/100/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "38008825955355",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/100/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f065",
+      "node_id": "n483",
+      "trace_index": 483,
+      "trace_path": "0/103/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "149755473157567",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/103/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f066",
+      "node_id": "n488",
+      "trace_index": 488,
+      "trace_path": "0/103/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "60629520542504",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/103/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f067",
+      "node_id": "n496",
+      "trace_index": 496,
+      "trace_path": "0/106/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "238881425772630",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/106/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f068",
+      "node_id": "n501",
+      "trace_index": 501,
+      "trace_path": "0/106/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "96712767859012",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/106/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f069",
+      "node_id": "n509",
+      "trace_index": 509,
+      "trace_path": "0/109/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "381050083686248",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/109/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f070",
+      "node_id": "n514",
+      "trace_index": 514,
+      "trace_path": "0/109/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "154270714715516",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/109/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f071",
+      "node_id": "n522",
+      "trace_index": 522,
+      "trace_path": "0/112/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "607829452656980",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/112/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f072",
+      "node_id": "n527",
+      "trace_index": 527,
+      "trace_path": "0/112/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "246083882673393",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/112/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f073",
+      "node_id": "n535",
+      "trace_index": 535,
+      "trace_path": "0/115/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "969575022640567",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/115/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f074",
+      "node_id": "n540",
+      "trace_index": 540,
+      "trace_path": "0/115/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "392539033887820",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/115/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f075",
+      "node_id": "n548",
+      "trace_index": 548,
+      "trace_path": "0/118/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "1546611011393314",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/118/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f076",
+      "node_id": "n553",
+      "trace_index": 553,
+      "trace_path": "0/118/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "626155973530743",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/118/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f077",
+      "node_id": "n561",
+      "trace_index": 561,
+      "trace_path": "0/121/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "2467066049255885",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/121/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f078",
+      "node_id": "n566",
+      "trace_index": 566,
+      "trace_path": "0/121/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "998808447926934",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/121/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f079",
+      "node_id": "n574",
+      "trace_index": 574,
+      "trace_path": "0/124/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "3935323650584836",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/124/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f080",
+      "node_id": "n579",
+      "trace_index": 579,
+      "trace_path": "0/124/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "1593242511166798",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/124/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f081",
+      "node_id": "n587",
+      "trace_index": 587,
+      "trace_path": "0/127/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "6277404790002874",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/127/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f082",
+      "node_id": "n592",
+      "trace_index": 592,
+      "trace_path": "0/127/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "2541449969368678",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/127/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f083",
+      "node_id": "n600",
+      "trace_index": 600,
+      "trace_path": "0/130/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "10013359610637070",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/130/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f084",
+      "node_id": "n605",
+      "trace_index": 605,
+      "trace_path": "0/130/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "4053976655489743",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/130/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f085",
+      "node_id": "n613",
+      "trace_index": 613,
+      "trace_path": "0/133/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "15972742565784397",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/133/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f086",
+      "node_id": "n618",
+      "trace_index": 618,
+      "trace_path": "0/133/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "6466673324810069",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/133/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f087",
+      "node_id": "n626",
+      "trace_index": 626,
+      "trace_path": "0/136/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "25478811806758725",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/136/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f088",
+      "node_id": "n631",
+      "trace_index": 631,
+      "trace_path": "0/136/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "10315270028302194",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/136/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f089",
+      "node_id": "n639",
+      "trace_index": 639,
+      "trace_path": "0/139/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "40642353585215256",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/139/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f090",
+      "node_id": "n644",
+      "trace_index": 644,
+      "trace_path": "0/139/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "16454332917754857",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/139/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f091",
+      "node_id": "n652",
+      "trace_index": 652,
+      "trace_path": "0/142/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "64830374252675655",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/142/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f092",
+      "node_id": "n657",
+      "trace_index": 657,
+      "trace_path": "0/142/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "26247017385435655",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/142/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f093",
+      "node_id": "n665",
+      "trace_index": 665,
+      "trace_path": "0/145/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "103413731119915655",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/145/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f094",
+      "node_id": "n670",
+      "trace_index": 670,
+      "trace_path": "0/145/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "41867751495899636",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/145/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f095",
+      "node_id": "n678",
+      "trace_index": 678,
+      "trace_path": "0/148/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "164959710743931674",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/148/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f096",
+      "node_id": "n683",
+      "trace_index": 683,
+      "trace_path": "0/148/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "66785059406219881",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/148/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f097",
+      "node_id": "n691",
+      "trace_index": 691,
+      "trace_path": "0/151/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "263134362081643467",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/151/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f098",
+      "node_id": "n696",
+      "trace_index": 696,
+      "trace_path": "0/151/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "106531733865123793",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/151/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f099",
+      "node_id": "n704",
+      "trace_index": 704,
+      "trace_path": "0/154/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "419736990298163141",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/154/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f100",
+      "node_id": "n709",
+      "trace_index": 709,
+      "trace_path": "0/154/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "169933371643487647",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/154/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f101",
+      "node_id": "n717",
+      "trace_index": 717,
+      "trace_path": "0/157/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "669540608952838635",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/157/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f102",
+      "node_id": "n722",
+      "trace_index": 722,
+      "trace_path": "0/157/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "271068063481293977",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/157/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f103",
+      "node_id": "n730",
+      "trace_index": 730,
+      "trace_path": "0/160/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "1068013154424383293",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/160/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f104",
+      "node_id": "n735",
+      "trace_index": 735,
+      "trace_path": "0/160/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "432392380195056955",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/160/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f105",
+      "node_id": "n743",
+      "trace_index": 743,
+      "trace_path": "0/163/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "1703633928653709631",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/163/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f106",
+      "node_id": "n748",
+      "trace_index": 748,
+      "trace_path": "0/163/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "689727768183391127",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/163/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f107",
+      "node_id": "n756",
+      "trace_index": 756,
+      "trace_path": "0/166/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "2717540089124028135",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/166/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f108",
+      "node_id": "n761",
+      "trace_index": 761,
+      "trace_path": "0/166/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "1100214564346941607",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/166/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f109",
+      "node_id": "n769",
+      "trace_index": 769,
+      "trace_path": "0/169/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "4334865613901114663",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/169/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f110",
+      "node_id": "n774",
+      "trace_index": 774,
+      "trace_path": "0/169/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "1754999788959169646",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/169/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f111",
+      "node_id": "n782",
+      "trace_index": 782,
+      "trace_path": "0/172/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "6914731438843059680",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/172/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f112",
+      "node_id": "n787",
+      "trace_index": 787,
+      "trace_path": "0/172/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "2799475992280606912",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/172/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f113",
+      "node_id": "n795",
+      "trace_index": 795,
+      "trace_path": "0/175/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "11029986885405512448",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/175/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f114",
+      "node_id": "n800",
+      "trace_index": 800,
+      "trace_path": "0/175/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "4465565113260432016",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/175/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f115",
+      "node_id": "n808",
+      "trace_index": 808,
+      "trace_path": "0/178/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "17594408657550592880",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/178/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f116",
+      "node_id": "n813",
+      "trace_index": 813,
+      "trace_path": "0/178/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "7123215857451736781",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/178/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f117",
+      "node_id": "n822",
+      "trace_index": 822,
+      "trace_path": "0/183/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "normalized": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "operator_address": {
+        "original": "0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc",
+        "normalized": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc"
+      },
+      "from_address": {
+        "original": "0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc",
+        "normalized": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "847206697433507365949",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/183/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f118",
+      "node_id": "n828",
+      "trace_index": 828,
+      "trace_path": "0/183/1/1/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "70953209100868100",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/183/1/1/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f119",
+      "node_id": "n833",
+      "trace_index": 833,
+      "trace_path": "0/183/1/1/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "normalized": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "4029106880396",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/183/1/1/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f120",
+      "node_id": "n834",
+      "trace_index": 834,
+      "trace_path": "0/183/1/1/0/4/0/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xa2327a938Febf5FEC13baCFb16Ae10EcBc4cbDCF",
+        "normalized": "0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf"
+      },
+      "operator_address": {
+        "original": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "normalized": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      },
+      "from_address": {
+        "original": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "normalized": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "4029106880396",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/183/1/1/0/4/0/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f121",
+      "node_id": "n840",
+      "trace_index": 840,
+      "trace_path": "0/183/1/1/0/7/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xab5167e8cC36A3a91Fd2d75C6147140cd1837355",
+        "normalized": "0xab5167e8cc36a3a91fd2d75c6147140cd1837355"
+      },
+      "amount_raw": "71095352404563737",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/183/1/1/0/7/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f122",
+      "node_id": "n843",
+      "trace_index": 843,
+      "trace_path": "0/183/1/2",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "normalized": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      },
+      "operator_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc",
+        "normalized": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc"
+      },
+      "amount_raw": "4029106880396",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/183/1/2"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f123",
+      "node_id": "n844",
+      "trace_index": 844,
+      "trace_path": "0/183/1/2/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xa2327a938Febf5FEC13baCFb16Ae10EcBc4cbDCF",
+        "normalized": "0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf"
+      },
+      "operator_address": {
+        "original": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "normalized": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      },
+      "from_address": {
+        "original": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "normalized": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      },
+      "to_address": {
+        "original": "0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc",
+        "normalized": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc"
+      },
+      "amount_raw": "4029106880396",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/183/1/2/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f124",
+      "node_id": "n854",
+      "trace_index": 854,
+      "trace_path": "0/187/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "normalized": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "operator_address": {
+        "original": "0x0d4a11d5EEaaC28EC3F61d100daF4d40471f1852",
+        "normalized": "0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852"
+      },
+      "from_address": {
+        "original": "0x0d4a11d5EEaaC28EC3F61d100daF4d40471f1852",
+        "normalized": "0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "949032579850826052421",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/187/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f125",
+      "node_id": "n860",
+      "trace_index": 860,
+      "trace_path": "0/187/1/1/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "80708374630172707",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/187/1/1/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f126",
+      "node_id": "n865",
+      "trace_index": 865,
+      "trace_path": "0/187/1/1/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+        "normalized": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "amount_raw": "4525120098829",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/187/1/1/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f127",
+      "node_id": "n870",
+      "trace_index": 870,
+      "trace_path": "0/187/1/1/0/7/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xab5167e8cC36A3a91Fd2d75C6147140cd1837355",
+        "normalized": "0xab5167e8cc36a3a91fd2d75c6147140cd1837355"
+      },
+      "amount_raw": "80875617675814859",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/187/1/1/0/7/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f128",
+      "node_id": "n873",
+      "trace_index": 873,
+      "trace_path": "0/187/1/2",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+        "normalized": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "operator_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x0d4a11d5EEaaC28EC3F61d100daF4d40471f1852",
+        "normalized": "0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852"
+      },
+      "amount_raw": "4525120098829",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/187/1/2"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f129",
+      "node_id": "n883",
+      "trace_index": 883,
+      "trace_path": "0/191/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "36290435922540799",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/191/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f130",
+      "node_id": "n888",
+      "trace_index": 888,
+      "trace_path": "0/191/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "normalized": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0x8f6A86f3aB015F4D03DDB13AbB02710e6d7aB31B",
+        "normalized": "0x8f6a86f3ab015f4d03ddb13abb02710e6d7ab31b"
+      },
+      "amount_raw": "452912053033493786925",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/191/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f131",
+      "node_id": "n893",
+      "trace_index": 893,
+      "trace_path": "0/191/0/7/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xab5167e8cC36A3a91Fd2d75C6147140cd1837355",
+        "normalized": "0xab5167e8cc36a3a91fd2d75c6147140cd1837355"
+      },
+      "amount_raw": "36354235035052496",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/191/0/7/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f132",
+      "node_id": "n898",
+      "trace_index": 898,
+      "trace_path": "0/194",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "normalized": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "operator_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x8f6A86f3aB015F4D03DDB13AbB02710e6d7aB31B",
+        "normalized": "0x8f6a86f3ab015f4d03ddb13abb02710e6d7ab31b"
+      },
+      "amount_raw": "1796239277284333418370",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/194"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f133",
+      "node_id": "n905",
+      "trace_index": 905,
+      "trace_path": "0/197/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "21785381318954328",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/197/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f134",
+      "node_id": "n910",
+      "trace_index": 910,
+      "trace_path": "0/197/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+        "normalized": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0x8f6A86f3aB015F4D03DDB13AbB02710e6d7aB31B",
+        "normalized": "0x8f6a86f3ab015f4d03ddb13abb02710e6d7ab31b"
+      },
+      "amount_raw": "2142797145",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/197/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f135",
+      "node_id": "n915",
+      "trace_index": 915,
+      "trace_path": "0/197/0/7/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xab5167e8cC36A3a91Fd2d75C6147140cd1837355",
+        "normalized": "0xab5167e8cc36a3a91fd2d75c6147140cd1837355"
+      },
+      "amount_raw": "21821436816436093",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/197/0/7/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f136",
+      "node_id": "n925",
+      "trace_index": 925,
+      "trace_path": "0/201/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "4556965450519104",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/201/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f137",
+      "node_id": "n930",
+      "trace_index": 930,
+      "trace_path": "0/201/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x92E187a03B6CD19CB6AF293ba17F2745Fd2357D5",
+        "normalized": "0x92e187a03b6cd19cb6af293ba17f2745fd2357d5"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0x8f6A86f3aB015F4D03DDB13AbB02710e6d7aB31B",
+        "normalized": "0x8f6a86f3ab015f4d03ddb13abb02710e6d7ab31b"
+      },
+      "amount_raw": "5155863718616852657152992",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/201/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f138",
+      "node_id": "n935",
+      "trace_index": 935,
+      "trace_path": "0/201/0/7/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xab5167e8cC36A3a91Fd2d75C6147140cd1837355",
+        "normalized": "0xab5167e8cc36a3a91fd2d75c6147140cd1837355"
+      },
+      "amount_raw": "4563948839014705",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/201/0/7/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f139",
+      "node_id": "n945",
+      "trace_index": 945,
+      "trace_path": "0/205/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "79074290647314",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/205/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f140",
+      "node_id": "n950",
+      "trace_index": 950,
+      "trace_path": "0/205/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3",
+        "normalized": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0x8f6A86f3aB015F4D03DDB13AbB02710e6d7aB31B",
+        "normalized": "0x8f6a86f3ab015f4d03ddb13abb02710e6d7ab31b"
+      },
+      "amount_raw": "4125858256772000000000",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/205/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f141",
+      "node_id": "n955",
+      "trace_index": 955,
+      "trace_path": "0/205/0/7/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xab5167e8cC36A3a91Fd2d75C6147140cd1837355",
+        "normalized": "0xab5167e8cc36a3a91fd2d75c6147140cd1837355"
+      },
+      "amount_raw": "79192946641778",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/205/0/7/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f142",
+      "node_id": "n965",
+      "trace_index": 965,
+      "trace_path": "0/209/0/1",
+      "transfer_kind": "TRANSFER_FROM",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x66e7d7839333f502df355f5bd87aEA24BAC2eE63",
+        "normalized": "0x66e7d7839333f502df355f5bd87aea24bac2ee63"
+      },
+      "from_address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "to_address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "amount_raw": "34225127213538",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transferFrom call",
+      "trace_refs": [
+        "0/209/0/1"
+      ],
+      "uncertainties": [
+        "operator_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f143",
+      "node_id": "n970",
+      "trace_index": 970,
+      "trace_path": "0/209/0/4/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xF57e7e7C23978C3cAEC3C3548E3D615c346e79fF",
+        "normalized": "0xf57e7e7c23978c3caec3c3548e3d615c346e79ff"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0x8f6A86f3aB015F4D03DDB13AbB02710e6d7aB31B",
+        "normalized": "0x8f6a86f3ab015f4d03ddb13abb02710e6d7ab31b"
+      },
+      "amount_raw": "274939044087758284822",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/209/0/4/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    },
+    {
+      "fact_id": "asset_f144",
+      "node_id": "n975",
+      "trace_index": 975,
+      "trace_path": "0/209/0/7/0/0",
+      "transfer_kind": "TRANSFER",
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "operator_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "from_address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "to_address": {
+        "original": "0xab5167e8cC36A3a91Fd2d75C6147140cd1837355",
+        "normalized": "0xab5167e8cc36a3a91fd2d75c6147140cd1837355"
+      },
+      "amount_raw": "34276473251760",
+      "status": "COMPLETE",
+      "evidence_level": "OBSERVED",
+      "reason": "standard ERC-20 transfer call",
+      "trace_refs": [
+        "0/209/0/7/0/0"
+      ],
+      "uncertainties": [
+        "from_address is derived from parent call context"
+      ]
+    }
+  ],
+  "address_flow_summaries": [
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+        "normalized": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+      },
+      "address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "incoming_transfer_count": 0,
+      "outgoing_transfer_count": 1,
+      "incoming_amount_raw": "0",
+      "outgoing_amount_raw": "2142797145",
+      "observed_delta_raw": "-2142797145",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+        "normalized": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+      },
+      "address": {
+        "original": "0x8f6A86f3aB015F4D03DDB13AbB02710e6d7aB31B",
+        "normalized": "0x8f6a86f3ab015f4d03ddb13abb02710e6d7ab31b"
+      },
+      "incoming_transfer_count": 1,
+      "outgoing_transfer_count": 0,
+      "incoming_amount_raw": "2142797145",
+      "outgoing_amount_raw": "0",
+      "observed_delta_raw": "2142797145",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "incoming_transfer_count": 63,
+      "outgoing_transfer_count": 0,
+      "incoming_amount_raw": "47372135604893646107",
+      "outgoing_amount_raw": "0",
+      "observed_delta_raw": "47372135604893646107",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "incoming_transfer_count": 0,
+      "outgoing_transfer_count": 66,
+      "incoming_amount_raw": "0",
+      "outgoing_amount_raw": "101863766161836469048129",
+      "observed_delta_raw": "-101863766161836469048129",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "address": {
+        "original": "0x7B9aa6ED8B514C86bA819B99897b69b608293fFC",
+        "normalized": "0x7b9aa6ed8b514c86ba819b99897b69b608293ffc"
+      },
+      "incoming_transfer_count": 1,
+      "outgoing_transfer_count": 0,
+      "incoming_amount_raw": "1670757229764922279713",
+      "outgoing_amount_raw": "0",
+      "observed_delta_raw": "1670757229764922279713",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "address": {
+        "original": "0x81D98c8fdA0410ee3e9D7586cB949cD19FA4cf38",
+        "normalized": "0x81d98c8fda0410ee3e9d7586cb949cd19fa4cf38"
+      },
+      "incoming_transfer_count": 1,
+      "outgoing_transfer_count": 0,
+      "incoming_amount_raw": "152974521385715493913",
+      "outgoing_amount_raw": "0",
+      "observed_delta_raw": "152974521385715493913",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "address": {
+        "original": "0xab5167e8cC36A3a91Fd2d75C6147140cd1837355",
+        "normalized": "0xab5167e8cc36a3a91fd2d75c6147140cd1837355"
+      },
+      "incoming_transfer_count": 8,
+      "outgoing_transfer_count": 0,
+      "incoming_amount_raw": "99940956189892885372256",
+      "outgoing_amount_raw": "0",
+      "observed_delta_raw": "99940956189892885372256",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x2920f7d6134f4669343e70122cA9b8f19Ef8fa5D",
+        "normalized": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d"
+      },
+      "address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "incoming_transfer_count": 56,
+      "outgoing_transfer_count": 63,
+      "incoming_amount_raw": "99078220792945902247",
+      "outgoing_amount_raw": "47372135604893646107",
+      "observed_delta_raw": "51706085188052256140",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x92E187a03B6CD19CB6AF293ba17F2745Fd2357D5",
+        "normalized": "0x92e187a03b6cd19cb6af293ba17f2745fd2357d5"
+      },
+      "address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "incoming_transfer_count": 0,
+      "outgoing_transfer_count": 1,
+      "incoming_amount_raw": "0",
+      "outgoing_amount_raw": "5155863718616852657152992",
+      "observed_delta_raw": "-5155863718616852657152992",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x92E187a03B6CD19CB6AF293ba17F2745Fd2357D5",
+        "normalized": "0x92e187a03b6cd19cb6af293ba17f2745fd2357d5"
+      },
+      "address": {
+        "original": "0x8f6A86f3aB015F4D03DDB13AbB02710e6d7aB31B",
+        "normalized": "0x8f6a86f3ab015f4d03ddb13abb02710e6d7ab31b"
+      },
+      "incoming_transfer_count": 1,
+      "outgoing_transfer_count": 0,
+      "incoming_amount_raw": "5155863718616852657152992",
+      "outgoing_amount_raw": "0",
+      "observed_delta_raw": "5155863718616852657152992",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3",
+        "normalized": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3"
+      },
+      "address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "incoming_transfer_count": 0,
+      "outgoing_transfer_count": 1,
+      "incoming_amount_raw": "0",
+      "outgoing_amount_raw": "4125858256772000000000",
+      "observed_delta_raw": "-4125858256772000000000",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3",
+        "normalized": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3"
+      },
+      "address": {
+        "original": "0x8f6A86f3aB015F4D03DDB13AbB02710e6d7aB31B",
+        "normalized": "0x8f6a86f3ab015f4d03ddb13abb02710e6d7ab31b"
+      },
+      "incoming_transfer_count": 1,
+      "outgoing_transfer_count": 0,
+      "incoming_amount_raw": "4125858256772000000000",
+      "outgoing_amount_raw": "0",
+      "observed_delta_raw": "4125858256772000000000",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "normalized": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      },
+      "address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "incoming_transfer_count": 0,
+      "outgoing_transfer_count": 1,
+      "incoming_amount_raw": "0",
+      "outgoing_amount_raw": "4029106880396",
+      "observed_delta_raw": "-4029106880396",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "normalized": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      },
+      "address": {
+        "original": "0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc",
+        "normalized": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc"
+      },
+      "incoming_transfer_count": 1,
+      "outgoing_transfer_count": 0,
+      "incoming_amount_raw": "4029106880396",
+      "outgoing_amount_raw": "0",
+      "observed_delta_raw": "4029106880396",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "normalized": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      },
+      "address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "incoming_transfer_count": 1,
+      "outgoing_transfer_count": 1,
+      "incoming_amount_raw": "4029106880396",
+      "outgoing_amount_raw": "4029106880396",
+      "observed_delta_raw": "0",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xa2327a938Febf5FEC13baCFb16Ae10EcBc4cbDCF",
+        "normalized": "0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf"
+      },
+      "address": {
+        "original": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "normalized": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      },
+      "incoming_transfer_count": 0,
+      "outgoing_transfer_count": 2,
+      "incoming_amount_raw": "0",
+      "outgoing_amount_raw": "8058213760792",
+      "observed_delta_raw": "-8058213760792",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xa2327a938Febf5FEC13baCFb16Ae10EcBc4cbDCF",
+        "normalized": "0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf"
+      },
+      "address": {
+        "original": "0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc",
+        "normalized": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc"
+      },
+      "incoming_transfer_count": 1,
+      "outgoing_transfer_count": 0,
+      "incoming_amount_raw": "4029106880396",
+      "outgoing_amount_raw": "0",
+      "observed_delta_raw": "4029106880396",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xa2327a938Febf5FEC13baCFb16Ae10EcBc4cbDCF",
+        "normalized": "0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf"
+      },
+      "address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "incoming_transfer_count": 1,
+      "outgoing_transfer_count": 0,
+      "incoming_amount_raw": "4029106880396",
+      "outgoing_amount_raw": "0",
+      "observed_delta_raw": "4029106880396",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "normalized": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "address": {
+        "original": "0x0d4a11d5EEaaC28EC3F61d100daF4d40471f1852",
+        "normalized": "0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852"
+      },
+      "incoming_transfer_count": 0,
+      "outgoing_transfer_count": 1,
+      "incoming_amount_raw": "0",
+      "outgoing_amount_raw": "949032579850826052421",
+      "observed_delta_raw": "-949032579850826052421",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "normalized": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "address": {
+        "original": "0x59653E37F8c491C3Be36e5DD4D503Ca32B5ab2f4",
+        "normalized": "0x59653e37f8c491c3be36e5dd4d503ca32b5ab2f4"
+      },
+      "incoming_transfer_count": 1,
+      "outgoing_transfer_count": 0,
+      "incoming_amount_raw": "100000000000000000",
+      "outgoing_amount_raw": "0",
+      "observed_delta_raw": "100000000000000000",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "normalized": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "incoming_transfer_count": 0,
+      "outgoing_transfer_count": 1,
+      "incoming_amount_raw": "0",
+      "outgoing_amount_raw": "452912053033493786925",
+      "observed_delta_raw": "-452912053033493786925",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "normalized": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "address": {
+        "original": "0x8f6A86f3aB015F4D03DDB13AbB02710e6d7aB31B",
+        "normalized": "0x8f6a86f3ab015f4d03ddb13abb02710e6d7ab31b"
+      },
+      "incoming_transfer_count": 2,
+      "outgoing_transfer_count": 0,
+      "incoming_amount_raw": "2249151330317827205295",
+      "outgoing_amount_raw": "0",
+      "observed_delta_raw": "2249151330317827205295",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "normalized": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "address": {
+        "original": "0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc",
+        "normalized": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc"
+      },
+      "incoming_transfer_count": 0,
+      "outgoing_transfer_count": 1,
+      "incoming_amount_raw": "0",
+      "outgoing_amount_raw": "847206697433507365949",
+      "observed_delta_raw": "-847206697433507365949",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "normalized": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "incoming_transfer_count": 2,
+      "outgoing_transfer_count": 2,
+      "incoming_amount_raw": "1796239277284333418370",
+      "outgoing_amount_raw": "1796339277284333418370",
+      "observed_delta_raw": "-100000000000000000",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+        "normalized": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "address": {
+        "original": "0x0d4a11d5EEaaC28EC3F61d100daF4d40471f1852",
+        "normalized": "0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852"
+      },
+      "incoming_transfer_count": 1,
+      "outgoing_transfer_count": 0,
+      "incoming_amount_raw": "4525120098829",
+      "outgoing_amount_raw": "0",
+      "observed_delta_raw": "4525120098829",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+        "normalized": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "incoming_transfer_count": 0,
+      "outgoing_transfer_count": 1,
+      "incoming_amount_raw": "0",
+      "outgoing_amount_raw": "4525120098829",
+      "observed_delta_raw": "-4525120098829",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+        "normalized": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "address": {
+        "original": "0xf079d7911c13369E7fd85607970036D2883aFcfD",
+        "normalized": "0xf079d7911c13369e7fd85607970036d2883afcfd"
+      },
+      "incoming_transfer_count": 1,
+      "outgoing_transfer_count": 1,
+      "incoming_amount_raw": "4525120098829",
+      "outgoing_amount_raw": "4525120098829",
+      "observed_delta_raw": "0",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xF57e7e7C23978C3cAEC3C3548E3D615c346e79fF",
+        "normalized": "0xf57e7e7c23978c3caec3c3548e3d615c346e79ff"
+      },
+      "address": {
+        "original": "0x7164be9Fd69F2e1De9B6B75B17e1B86268F18b45",
+        "normalized": "0x7164be9fd69f2e1de9b6b75b17e1b86268f18b45"
+      },
+      "incoming_transfer_count": 0,
+      "outgoing_transfer_count": 1,
+      "incoming_amount_raw": "0",
+      "outgoing_amount_raw": "274939044087758284822",
+      "observed_delta_raw": "-274939044087758284822",
+      "completeness": "PARTIAL"
+    },
+    {
+      "asset_type": "TOKEN",
+      "asset_address": {
+        "original": "0xF57e7e7C23978C3cAEC3C3548E3D615c346e79fF",
+        "normalized": "0xf57e7e7c23978c3caec3c3548e3d615c346e79ff"
+      },
+      "address": {
+        "original": "0x8f6A86f3aB015F4D03DDB13AbB02710e6d7aB31B",
+        "normalized": "0x8f6a86f3ab015f4d03ddb13abb02710e6d7ab31b"
+      },
+      "incoming_transfer_count": 1,
+      "outgoing_transfer_count": 0,
+      "incoming_amount_raw": "274939044087758284822",
+      "outgoing_amount_raw": "0",
+      "observed_delta_raw": "274939044087758284822",
+      "completeness": "PARTIAL"
+    }
+  ],
+  "metadata": {
+    "complete_fact_count": 144,
+    "incomplete_fact_count": 0,
+    "token_transfer_fact_count": 144,
+    "native_transfer_fact_count": 0,
+    "unique_asset_count": 9,
+    "unique_participant_count": 10
+  }
+}
