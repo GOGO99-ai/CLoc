@@ -1,152 +1,152 @@
-# CLoc：结合执行证据与大语言模型的区块链应用故障定位
+# CLoc: LLM-Assisted Fault Localization for Blockchain Applications
 
-CLoc 是一个面向区块链应用的故障定位框架。它结合交易执行轨迹、正常交易参照和合约源码，利用大语言模型审查交易行为，并对潜在故障位置进行排序，生成附有执行证据和源码解释的分析报告。
+CLoc is a fault localization framework for blockchain applications. It combines transaction execution traces, normal transaction references, and smart contract source code to support LLM-based transaction review and fault localization. The framework produces ranked candidate locations with supporting execution evidence and source-level explanations.
 
-目前支持 Ethereum 和 BNB Smart Chain。
+CLoc currently supports Ethereum and BNB Smart Chain.
 
-## 功能概述
+## Overview
 
-- **执行证据构建**：从交易轨迹中提取调用关系与资产流动，构建动态交易证据图和候选证据链。
-- **正常参照审查**：检索可比较的正常交易证据链，由 LLM 比较执行结构和资产行为，判断是否需要继续定位。
-- **源码辅助定位**：按需获取相关合约的已验证源码，结合原始执行证据，对候选函数及可疑代码行进行分析。
-- **结果报告**：输出 Top-k 候选位置、证据引用和定位解释，支持 JSON 与 Markdown 格式。
+- **Execution evidence construction:** Extract call relationships and asset transfers from transaction traces to build dynamic transaction evidence graphs and candidate evidence chains.
+- **Reference-guided review:** Retrieve comparable normal transaction chains and use an LLM to compare execution structure and asset behavior, determining whether further localization is needed.
+- **Source-informed localization:** Retrieve relevant verified contract source code on demand and analyze candidate functions and suspicious lines alongside the original execution evidence.
+- **Analysis reports:** Produce Top-k candidate locations, evidence references, and explanations in JSON and Markdown formats.
 
-## 快速开始
+## Quick Start
 
-### 1. 安装
+### 1. Installation
 
-需要 Python 3.10 或更高版本。在项目根目录执行：
+Python 3.10 or later is required. From the repository root, run:
 
 ```powershell
 python -m pip install -e .
 ```
 
-安装后可使用 `cloc` 命令，也可使用 `python -m cloc`。
+After installation, use either `cloc` or `python -m cloc`.
 
-### 2. 配置服务
+### 2. Configure Services
 
-CLoc 使用 RPC 获取交易执行轨迹，通过区块浏览器获取已验证源码，并调用 LLM 完成交易审查与故障定位。
+CLoc uses an RPC service to retrieve transaction execution traces, a block explorer to retrieve verified source code, and an LLM service for transaction review and fault localization.
 
-在 PowerShell 中设置环境变量，将占位内容替换为自己的配置：
+Set the following environment variables in PowerShell, replacing the placeholders with your own configuration:
 
 ```powershell
-$env:ETH_RPC_URL = "<Ethereum RPC 地址>"
-$env:ETHERSCAN_API_KEY = "<区块浏览器 API Key>"
-$env:CLOC_LLM_API_KEY = "<LLM API Key>"
+$env:ETH_RPC_URL = "<Ethereum RPC URL>"
+$env:ETHERSCAN_API_KEY = "<Block explorer API key>"
+$env:CLOC_LLM_API_KEY = "<LLM API key>"
 $env:CLOC_LLM_MODEL = "gpt-4o"
 ```
 
-分析 BNB Smart Chain 交易时，另行设置：
+For BNB Smart Chain transactions, also set:
 
 ```powershell
-$env:BSC_RPC_URL = "<BNB Smart Chain RPC 地址>"
+$env:BSC_RPC_URL = "<BNB Smart Chain RPC URL>"
 ```
 
-RPC 服务需要支持目标历史交易的 `debug_traceTransaction` 与 `callTracer`。
+The RPC service must support `debug_traceTransaction` with `callTracer` for the historical transactions being analyzed.
 
-使用兼容 Chat Completions 的其他模型服务时，可设置：
+To use another service compatible with the Chat Completions API, set:
 
 ```powershell
-$env:CLOC_LLM_BASE_URL = "<模型服务 API 基础地址>"
-$env:CLOC_LLM_MODEL = "<模型名称>"
+$env:CLOC_LLM_BASE_URL = "<Model service API base URL>"
+$env:CLOC_LLM_MODEL = "<Model name>"
 ```
 
-`CLOC_LLM_BASE_URL` 不包含 `/chat/completions` 后缀。个人 RPC 地址和 API Key 通过环境变量提供，请勿写入提交到仓库的文件。
+The base URL must omit the `/chat/completions` suffix. Supply personal RPC URLs and API keys through environment variables, and keep them out of files committed to the repository.
 
-### 3. 构建正常交易参照库
+### 3. Build a Normal Reference Library
 
-按照 `examples/normal_manifest.example.json` 的格式，准备正常交易轨迹清单，并记录正常性的判断依据。清单中的轨迹路径相对于清单文件所在目录解析。
+Prepare a manifest of normal transaction traces using the format in `examples/normal_manifest.example.json`. Record the basis for treating each transaction as normal. Trace paths are resolved relative to the manifest file.
 
 ```powershell
 cloc build-reference --manifest data/normal_manifest.json --output data/normal_reference.json
 ```
 
-参照库按链和业务入口组织。每组需要至少三条可用的参考记录；参考不足或不具备可比性时，交易继续进入源码定位阶段。
+References are grouped by chain and business entry point. Each group requires at least three usable reference records for reference-guided review. Transactions without sufficient comparable references proceed to source-based localization.
 
-### 4. 分析交易
+### 4. Analyze a Transaction
 
-输入交易哈希、所属链和正常交易参照库：
+Provide a transaction hash, its chain, and the normal reference library:
 
 ```powershell
-cloc analyze --tx-hash "<交易哈希>" --chain eth --baseline data/normal_reference.json --output output/query
+cloc analyze --tx-hash "<Transaction hash>" --chain eth --baseline data/normal_reference.json --output output/query
 ```
 
-CLoc 将获取执行轨迹，构建证据链并调用 LLM 进行参照审查。需要进一步分析时，系统获取相关源码，完成候选位置排序并生成报告。
+CLoc retrieves the execution trace, constructs evidence chains, and invokes the LLM for reference-guided review. When further analysis is needed, it retrieves relevant source code, ranks candidate locations, and generates a report.
 
-如果已经保存了交易执行轨迹，也可以直接提供 JSON 文件：
+You can also provide an existing transaction execution trace as a JSON file:
 
 ```powershell
 cloc analyze --trace data/query.trace.json --chain eth --baseline data/normal_reference.json --output output/query
 ```
 
-## 常用参数
+## Command-Line Options
 
-| 参数 | 说明 |
+| Option | Description |
 |---|---|
-| `--tx-hash` | 待分析交易的哈希，与 `--trace` 二选一 |
-| `--trace` | 已保存的 JSON callTracer 轨迹文件 |
-| `--chain` | 所属链：`eth` 或 `bsc` |
-| `--baseline` | 正常交易参照库路径 |
-| `--output` | 分析结果保存目录 |
-| `--model` | 指定本次分析使用的模型 |
-| `--top-k` | 返回的候选数量，支持 1–5，默认 5 |
-| `--source-cache` | 合约源码缓存目录，默认 `data/source_cache` |
+| `--tx-hash` | Transaction hash; mutually exclusive with `--trace` |
+| `--trace` | Path to a saved JSON callTracer trace |
+| `--chain` | Blockchain: `eth` or `bsc` |
+| `--baseline` | Path to the normal reference library |
+| `--output` | Directory for analysis results |
+| `--model` | Model to use for this analysis |
+| `--top-k` | Number of candidates to return: 1-5; default: 5 |
+| `--source-cache` | Source code cache directory; default: `data/source_cache` |
 
-例如，分析 BNB Smart Chain 交易并返回前三个候选位置：
+For example, analyze a BNB Smart Chain transaction and return the top three candidate locations:
 
 ```powershell
-cloc analyze --tx-hash "<交易哈希>" --chain bsc --baseline data/normal_reference.json --top-k 3 --output output/query
+cloc analyze --tx-hash "<Transaction hash>" --chain bsc --baseline data/normal_reference.json --top-k 3 --output output/query
 ```
 
-完整参数说明：
+For the complete list of options, run:
 
 ```powershell
 cloc analyze --help
 ```
 
-## 方法流程
+## Method
 
-### 阶段一：构建交易执行证据
+### Stage I: Execution Evidence Construction
 
-系统将执行轨迹转换为动态交易证据图，提取调用信息和可观测的资产转移，围绕交易结果组织 CALL 与 ASSET 证据链，为后续分析提供执行上下文。
+CLoc converts an execution trace into a dynamic transaction evidence graph, extracting call information and observed asset transfers. It organizes CALL and ASSET evidence chains around transaction outcomes to provide execution context for subsequent analysis.
 
-### 阶段二：正常参照引导的交易审查
+### Stage II: Reference-Guided Transaction Review
 
-系统基于结构距离，为符合条件的查询链检索三条正常参考链。LLM 比较调用结构、资产方向及可观测金额，返回 `NORMAL`、`SUSPICIOUS` 或 `UNCERTAIN` 判定及相应解释。
+Using structural distance, CLoc retrieves three normal reference chains for each eligible query chain. The LLM compares call structure, asset flow directions, and observed amounts, returning a `NORMAL`, `SUSPICIOUS`, or `UNCERTAIN` verdict with an explanation.
 
-仅当所有必需的查询链均完成有效审查且全部被判定为 `NORMAL` 时，交易才以正常状态结束分析。其余交易继续进入阶段三。
+A transaction exits with a normal verdict only when all required query chains have valid review results and every verdict is `NORMAL`. All other transactions proceed to Stage III.
 
-### 阶段三：源码辅助的候选位置排序
+### Stage III: Source-Informed Candidate Ranking
 
-系统根据执行证据中的合约地址获取已验证源码，完成函数匹配和源码切片。LLM 结合原始执行证据与源码，对候选位置进行排序，并说明相关执行行为与代码逻辑之间的联系。
+CLoc retrieves verified source code using the contract addresses in the execution evidence, then matches functions and extracts source slices. The LLM combines the original execution evidence with these slices to rank candidate locations and explain the relationship between execution behavior and source code.
 
-这一阶段使用原始执行证据，不将上一阶段的模型解释作为定位依据。
+This stage uses the original execution evidence. Stage II model explanations are not passed to the localization stage.
 
-## 分析结果
+## Analysis Results
 
-结果保存在 `--output` 指定的目录：
+Results are saved to the directory specified by `--output`:
 
-| 文件 | 内容 |
+| File | Contents |
 |---|---|
-| `report.md` | 便于阅读的分析报告 |
-| `report.json` | 结构化分析结果 |
-| 其他阶段文件 | 执行证据、参考比较、源码获取记录和模型分析结果 |
+| `report.md` | Human-readable analysis report |
+| `report.json` | Structured analysis results |
+| Other stage artifacts | Execution evidence, reference comparisons, source acquisition records, and model analysis results |
 
-报告包含交易审查结果；完成源码定位时，还包含候选函数排名、源码位置、证据引用与解释。
+Reports include the transaction review outcome. When source-based localization completes, they also include candidate function rankings, source locations, evidence references, and explanations.
 
-模型给出有效的可疑行范围时，报告会进一步展示对应代码行，并区分函数完整范围与预测的可疑范围。证据不足或分析未完成时，报告保留相应状态和原因。
+Valid model-selected suspicious line ranges are reported separately from the full function ranges. When evidence is insufficient or analysis cannot be completed, the report records the corresponding status and reasons.
 
-## 代码结构
+## Project Structure
 
-| 路径 | 功能 |
+| Path | Responsibility |
 |---|---|
-| `src/cloc/trace/` | 交易轨迹获取与解析 |
-| `src/cloc/evidence/` | 动态交易证据图与证据链构建 |
-| `src/cloc/reference/` | 正常参照库、结构比较与参考检索 |
-| `src/cloc/review/` | LLM 交易审查与流程路由 |
-| `src/cloc/source/` | 合约源码获取、索引与切片 |
-| `src/cloc/localization/` | 源码候选分析与定位排序 |
-| `src/cloc/runtime/` | 模型服务调用与运行配置 |
-| `src/cloc/reporting/` | 分析报告生成 |
-| `src/cloc/pipeline.py` | 完整分析流程 |
-| `src/cloc/cli.py` | 命令行入口 |
+| `src/cloc/trace/` | Transaction trace acquisition and parsing |
+| `src/cloc/evidence/` | Dynamic transaction evidence graphs and evidence chains |
+| `src/cloc/reference/` | Normal reference library, structural comparison, and reference retrieval |
+| `src/cloc/review/` | LLM transaction review and routing |
+| `src/cloc/source/` | Contract source acquisition, indexing, and slicing |
+| `src/cloc/localization/` | Source candidate analysis and ranking |
+| `src/cloc/runtime/` | Model service clients and runtime configuration |
+| `src/cloc/reporting/` | Analysis report generation |
+| `src/cloc/pipeline.py` | End-to-end analysis workflow |
+| `src/cloc/cli.py` | Command-line interface |
