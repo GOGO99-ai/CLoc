@@ -1,0 +1,7 @@
+{
+  "samples": [
+    {"id": "normal-001", "chain": "eth", "trace": "normal-001.trace.json", "normality_source": "Replace with your independent basis for confirming this transaction is normal"},
+    {"id": "normal-002", "chain": "eth", "trace": "normal-002.trace.json", "normality_source": "Replace with your independent basis for confirming this transaction is normal"},
+    {"id": "normal-003", "chain": "eth", "trace": "normal-003.trace.json", "normality_source": "Replace with your independent basis for confirming this transaction is normal"}
+  ]
+}

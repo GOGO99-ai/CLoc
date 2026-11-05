@@ -1,7 +1,0 @@
-# Optional imports used by the older data collection helpers; install only if needed.
--r requirements.txt
-pandas
-networkx
-python-dateutil
-pytz
-tqdm
